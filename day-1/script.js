@@ -27,13 +27,13 @@ function partOneB () {
   let bill, billNumber, tip;
 
   // 1. prompt for the bill
-  
+  bill = prompt("What is your bill?");
   // 2. convert it to number
-  
+  billNumber = Number(bill);
   // 3. calculate tip
-
+  tip = bill * .20;
   // 4. set the message
-  
+  messageParagraph.innerHTML = `Your bill is ${bill}. Your tip is ${tip} at 20%.g`
 }
 
 // Example
