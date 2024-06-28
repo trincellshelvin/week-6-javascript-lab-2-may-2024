@@ -64,13 +64,14 @@ function partTwoB () {
   guessNumber = Number(guess);
 
   // 1. check if the number is too low.
-
+  if(guessNumber < answer) {
     // 2. if it is, set the message for too low.
-
+  messageParagraph.innerHTML = `Your guess is too low. Try again.`;
     // 3. if not, set the message for too high.
-
+  } else if(guessNumber > answer){
     // 4. if not, set the message for correct.
-
+  } else {messageParagraph.innerHTML = `You guessed the number! It was ${answer}.`;
+}
 }
 
 // Example
