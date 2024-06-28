@@ -100,15 +100,15 @@ function partThreeB () {
   let color;
   color = prompt("What color describes your mood today?");
   // 1. check for your first color
-
+if(color === "red") {
     // 2. give the message for this color
-
+   messageParagraph.innerHTML = `Are you feeling down?`; 
   // 3. check for the next color
-
+} else if(color === "blue") {`You must being have a good day!`;
     // 4. give the message for the next color
-    
+} else {
   // 5. otherwise, ask for another color
-
+  messageParagraph.innerHTML = `Try another color`;}
 }
 
 // Example
@@ -134,6 +134,14 @@ function partFourA () {
 // Try to catch as many as you can.
 function partFourB () {
   alert("Try it!");
-
+  playerOne = prompt("Player One, choose rock, paper, or scissors.");
+  playerTwo = prompt("Player Two, choose rock, paper, or scissors.");
+  if(playerOne === "scissors" && playerTwo === "paper"){
+    messageParagraph.innerHTML = "Player Two wins!";
+  } else if (playerOne === "paper" && playerTwo === "rock") {
+    messageParagraph.innerHTML = "Player One wins!";
+  } else {
+    messageParagraph.innerHTML = "It's a tie!";
+  }
 }
 
