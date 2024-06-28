@@ -33,7 +33,7 @@ function partOneB () {
   // 3. calculate tip
   tip = bill * .20;
   // 4. set the message
-  messageParagraph.innerHTML = `Your bill is ${bill}. Your tip is ${tip} at 20%.g`
+  messageParagraph.innerHTML = `Your bill is ${bill}. Your tip is ${tip} at 20%.`
 }
 
 // Example
@@ -56,12 +56,13 @@ function partTwoA () {
 function partTwoB () {
   alert("Try it!");
   // 1. prompt for the bill
-
+bill = prompt("What is your bill?");
   // 2. convert it to number
-
+billNumber = Number(bill);
   // 3. calculate split bill
-
+split = bill/4
   // 4. set the message
+  messageParagraph.innerHTML =`Your bill is ${bill}. Your part of the bill is ${split} among the four friends.`
 }
 
 // Example
@@ -91,20 +92,22 @@ function partThreeA () {
 // Try it!
 // This is a function that takes a number, x as an argument and returns the amount you shuold tip at 20%
 function twentyPercentTip(x) {
-  
+  return x*.20;
 }
 function partThreeB () {
   alert("Try it!");
   let bill, billNumber, tip, message;
   // 1. prompt the user for the bill
-  
+  bill = prompt("What is your bill amount?");
   // 2. convert the bill to a number
-  
+  billNumber = Number(bill);
   // 3. calculate the tip
-  
+  tip = twentyPercentTip(billNumber);
   // 4. create the message
+  message = tipMessage(tip, bill, 20);
   // HINT: use tipMessage, which is defined above partThreeA
-  
+  function tipMessage(tip, bill, tipRate) {
+  return `Your bill is ${bill}. You should tip $${tip}  at ${tipRate} percent.`
   // 5. set the message
   messageParagraph.innerHTML = message;
 }
