@@ -58,11 +58,17 @@ function partTwoA () {
 function partTwoB () {
   let friends = [];
   // 1. Add your friends to the array
-
+  friends[0] = "Sophia";
+  friends[1] = "Brianna/Alexis";
+  friends[2] = "Flosha'de/Shade";
+  friends[3] = "Maria";
   // 2. write your friends to the innerHTML of the document
-
+  messageParagraph.innerHTML = "Your friends are";
+  messageParagraph.innerHTML += `${friends[0]}`;
+  messageParagraph.innerHTML += `${friends[1]}`;
+  messageParagraph.innerHTML += `${friends[2]}`;
+  messageParagraph.innerHTML += `${friends[3]}`;
 }
-
 // Example
 // add more friends from the prompt
 function partThreeA () {
@@ -70,15 +76,16 @@ function partThreeA () {
   let friend = prompt("Enter a friend's name.");
 
   // 2. add the friend to the message
-  messageParagraph.innerHTML += `, ${friend}`;
+  messageParagraph.innerHTML += `${friend}`;
 }
 
 // Try it!
 // Try prompting for a friend with a slightly different prompt or writing the message in a slightly different format.
 function partThreeB () {
   // 1. prompt for a friend
-
+  let friend = prompt("Whis is your friend's favorite food?");
   // 2. add the friend to the message
+  messageParagraph.innerHTML += `${friend}`;
 }
 
 // Example
