@@ -21,11 +21,18 @@ function partOneB () {
   let friends 
   friends = [];
   // 1. TODO: Add your own friends to the array
-
+  friends[0] = "Sophia";
+  friends[1] = "Brianna/Alexis";
+  friends[2] = "Flosha'de/Sha'de";
+  friends[3] = "Janice";
+  friends[4] = "Mrs. Dana";
+  friends[5] = "My Mommy Trincella";
+  friends[6] = "Maria";
+  friends[7] = "Joseph";
   // 2. TODO: write your friends to the message
-
+  messageParagraph.innerHTML = `I have a great group of people in my corner whom have in some small part kept me centered while learning something new. I would like to thank them for everything that they have done for me to get thorough an unfamiliar learning experience. 
+  Thanks to ${friends[0]}, ${friends[1]}, ${friends[2]}, ${friends[3]}, ${friends[4]}, ${friends[5]}, ${friends[6]}, and ${friends[7]} for everything that you have done for me to concentrate and continue this process! Love y'all to pieces!`;
 }
-
 // Example
 // use += to add to the message
 function partTwoA () {
