@@ -107,7 +107,7 @@ function partThreeB () {
   message = tipMessage(tip, bill, 20);
   // HINT: use tipMessage, which is defined above partThreeA
   function tipMessage(tip, bill, tipRate) {
-  return `Your bill is ${bill}. You should tip $${tip}  at ${tipRate} percent.`}
+  return `Your bill is ${bill}. You should tip ${tip}  at ${tipRate} percent.`}
   // 5. set the message
   messageParagraph.innerHTML = message;
 }
