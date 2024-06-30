@@ -27,9 +27,9 @@ function partOneB () {
   guessNumber = Number(guess);
 
   // 1. check if the number is equal to the answer
-  if (guessNumber === answer){
+  if (guessNumber === answer){ messageParagraph.innerHTML = `You guessed the number! it was ${answer}.`;
     // 2. if it is, set the message for correct.
-  } else {  messageParagraph.innerHTML = `You guessed the number! it was ${answer}.`;
+  } else {  
     // 3. if not, set the message for wrong guess.
   messageParagraph.innerHTML = `You did not guess the number. Try again.`};
 }
