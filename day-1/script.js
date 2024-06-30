@@ -73,7 +73,7 @@ function tenPercentTip(x) {
 }
 // This is function that takes the tip and bill as arguments and creates a message for the user about what should be tipped.
 function tipMessage(tip, bill, tipRate) {
-  return `Your bill is ${bill}. You should tip $${tip}  at ${tipRate} percent.`
+  return `Your bill is ${bill}. You should tip $${tip}  at ${tipRate} percent.`;
 }
 function partThreeA () {
   let bill, billNumber, tip, message;
